@@ -7,23 +7,29 @@ Date:2016/10/18
 #include<stdio.h>
 //#include<conio.h>
 int main(){
-	float a,b,add,sub,mul,div;
+	int a,b;
 	printf("Enter the value of a:");
-	scanf("%f",&a);
+	scanf("%d",&a);
 	printf("Enter the value of b:");
-	scanf("%f",&b);
-	add=a+b;
+	scanf("%d",&b);
+	
 	printf("Use of '+' operator:\n");
-	printf("%f + %f=%f",a,b,add);
-	sub=a-b;
+	printf("%d + %d=%d",a,b,a+b);
+	
 	printf("\nUse of '-' operator:\n");
-	printf("%f - %f=%f",a,b,sub);
-	mul=a*b;
+	printf("%d - %d=%d",a,b,a-b);
+	
 	printf("\nUse of '*' operator:\n");
-	printf("%f * %f=%f",a,b,mul);
-	div=a/b;
+	printf("%d * %d=%d",a,b,a*b);
+	
 	printf("\nUse of '/' operator:\n");
-	printf("%f / %f=%f",a,b,div);
+	printf("%d / %d=%d",a,b,a/b);
+	
+	printf("\nUse of '%' operator:\n");
+	printf("%d %% %d=%d",a,b,a%b);
+	
+	
+	
 	
 	 
 return 0;	
